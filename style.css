@@ -1,0 +1,58 @@
+.container{
+    display:block;
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    background-color:rgb(137, 137, 241);
+    color:#fff;
+    font-size:20px;
+    text-align: center;
+    line-height:40px;
+    user-select: none;
+}
+.manu-item{
+    margin-top: 5px;
+    display:block;
+    width: 200px;
+    height: 40px;
+    background-color:rgb(255, 211, 205);
+    color:#fff;
+    font-size:15px;
+    text-align: center;
+    line-height:40px;
+    text-decoration: none;
+    user-select: none;
+}
+
+#check1:checked ~.manu1 {
+    /*  background-color: rgb(255, 196, 196)*/
+    display: block;
+}
+
+#check2:checked ~.manu2{
+    display:block;
+}
+
+#check1{
+    display: none;
+}
+
+.manu1 {
+    display:none;
+}
+
+#check2{
+    display:none;
+}
+
+.manu2{
+    display:none;
+}
+
+.wrapper{
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
