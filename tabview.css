@@ -1,0 +1,52 @@
+.buttons{
+    display: flex;
+    border-bottom: 3px solid #333;
+    background-color: rgb(195, 228, 218);
+}
+.button1,
+.button2,
+.button3 {
+    display: block;
+    flex:1;
+    text-align: center;
+    height:40px;
+    font-weight: 700;
+    user-select: none;
+    line-height: 40px
+}
+#tab1:checked~.buttons> .button1,
+#tab2:checked~.buttons> .button2,
+#tab3:checked~.buttons> .button3{
+    background-color: rgb(31, 44, 82);
+    transition: 0.4s;
+    color:#fff;
+   
+}
+body{
+    margin-top:100px;
+}
+.container{
+    box-shadow:0 0 10px black;
+    width:600px;
+    height:500px;
+    margin:0 auto;  /*좌우중앙 정렬 */
+    text-align: center;
+}
+
+.content1,
+.content2,
+.content3{
+    display: none;
+}
+#tab1:checked~.content1,
+#tab2:checked~.content2,
+#tab3:checked~.content3{
+    display: block;
+    margin-top: 100px;
+    font-size: 20px;
+}
+#tab1,
+#tab2,
+#tab3{
+    display: none;
+}
