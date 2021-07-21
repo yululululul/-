@@ -7,23 +7,23 @@
 .bold-text{font-family: 'Song Myung', serif;}
 
 #tab1:checked ~.container >.main-text,
-#tab1:checked ~.container >.next1{
+#tab1:checked ~.container >.buttons>.next1{
     display:none;
 }
 
 #tab1:checked ~.container >.bold-text,
-#tab1:checked ~ .container >.next2{
+#tab1:checked ~ .container >.buttons>.next2{
     display:block;
     animation: bagApper 1.5s linear;
 }
 
 #tab2:checked ~.container >.bold-text,
-#tab2:checked ~.container >.next2{
+#tab2:checked ~.container >.buttons>.next2{
     display:none;
 }
 
 #tab2:checked ~.container >.logo,
-#tab2:checked ~.container >a>.next3{
+#tab2:checked ~.container >.buttons>a>.next3{
     display:block;
     animation: bagApper 1.5s linear;
 }
@@ -45,6 +45,7 @@
     text-align: center;
 }
 .container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +65,7 @@
 .next1,
 .next2,
 .next3{
-    margin-bottom: 10px ;
-    width: 80px;
+        width: 80px;
     height: 35px;
     background-color: rgb(255, 169, 169);
     border-radius: 11px;
@@ -75,7 +75,8 @@
     cursor: pointer;
     user-select: none;
     position: absolute;
-    bottom: 300px;
+    bottom:calc(50vw - 260px);
+    right:calc(50vw - 53px);
 }
 .next2,
 .next3{
@@ -94,9 +95,9 @@
 a{
     text-decoration: none;
     color:#333;
-    position: absolute;
-    bottom:5px;
-    right:465px;
+   
+    
+    
 }
 #tab1,
 #tab2,
